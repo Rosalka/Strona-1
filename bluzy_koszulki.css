@@ -1,0 +1,15 @@
+h1
+{
+    text-align: center;
+}
+div
+{
+    display: table;
+    margin: 0 auto;
+}
+img
+{
+    height: 550px;
+    width: 500px;
+    margin: 40px;
+}

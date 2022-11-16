@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Strona dla Gulczyka</title>
+        <style>
+            body {
+                display: flex;
+                place-items: center;
+                place-content: center;
+            }
+            img {
+                height: 70%;
+                border: 5px solid #FF66B2;
+                box-shadow: 7px 7px 30px #FF3399;
+                border-radius: 50px;
+            }
+            div {
+                margin-top: 50px;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center;
+            }
+            #koks {
+                float: left;
+                padding: 0 40px 0 40px
+            }
+            button {
+                font-size: 50px;
+                padding: 20px 20px 20px 20px;
+            }
+            #koks1 {
+                float: left;
+                background-color: white;
+                text-align: center;
+                text-decoration: none;
+                border: 5px solid #FF66B2;
+                box-shadow: 5px 5px 30px #FF3399;
+                border-radius: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div id="koks"><button onclick="click1()" type="button" id="koks1">click</button><div id="output"></div></div>
+            <div id="koks"><img src="kwiat.jpg"></div>
+            <div id="koks"><button onclick="click2()" type="button" id="koks1">click</button><div id="output1"></div>
+        </div>
+        <script>
+            function click1() {
+                var output = document.getElementById('output')
+                output.innerHTML = '<video width="320" height="240" controls> <source src="pizza.mp4" type="video/mp4"> <source src="movie.ogg" type="video/ogg"></video>'
+            }
+            function click2() {
+                var output = document.getElementById('output1')
+                output.innerHTML = '<video width="320" height="240" controls> <source src="axolotl.mp4" type="video/mp4"> <source src="movie.ogg" type="video/ogg"></video>'
+            }
+        </script>
+    </body>
+</html>
